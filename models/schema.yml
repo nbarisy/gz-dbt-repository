@@ -4,14 +4,39 @@ sources:
     schema: gz_raw_data
     description: raw data of greenweez
     tables:
+      
       - name: sales
         identifier: raw_gz_sales
-        description: sales data of greenweez
+        description: sales data for greenweez
+        columns:
+          - name: orders_id
+            description: primary key for the order
+            tests:
+              - not_null
+        tests:
+          - unique:
+              column_name: "orders_id || '-' || pdt_id" 
+          
+
       - name: product
         identifier: raw_gz_product
         description: product types of greenweez
+        columns:
+          - name: products_id
+            description: primary key for the product data
+            tests:
+              - unique
+              - not_null
+               
       - name: ship
         identifier: raw_gz_ship
         description: shipping informations of greenweez
+        columns:
+          - name: orders_id
+            description: primary key for the product data
+            tests:
+             - unique
+             - not_null
+          
 
         
