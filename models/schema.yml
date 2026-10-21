@@ -1,0 +1,17 @@
+version: 2
+sources:
+  - name: raw
+    schema: gz_raw_data
+    description: raw data of greenweez
+    tables:
+      - name: sales
+        identifier: raw_gz_sales
+        description: sales data of greenweez
+      - name: product
+        identifier: raw_gz_product
+        description: product types of greenweez
+      - name: ship
+        identifier: raw_gz_ship
+        description: shipping informations of greenweez
+
+        
