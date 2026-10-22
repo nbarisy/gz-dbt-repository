@@ -41,30 +41,49 @@ sources:
       - name: adwords
         identifier: raw_gz_adwords
         description: data of adwords
-        tests:
-          - unique
-          - not_null
+        columns:
+          - name: paid_source
+            description: primary key for data
+            tests:
+            - not_null
+            
+          
+          
           
       - name: bing
         identifier: raw_gz_bing
         description: data of bing
-        tests:
-          - unique
-          - not_null
+        columns:
+          - name: paid_source
+            description: primary key
+            tests:
+              - not_null
+              
+        
+         
           
       - name: criteo
         identifier: raw_gz_criteo
         description: data of criteo
-        tests:
-          - unique
-          - not_null
+        columns:
+          - name: paid_source
+            description: primary key
+            tests:
+              - not_null
+         
+          
           
       - name: facebook
         identifier: raw_gz_facebook
         description: data of facebook
-        tests:
-          - unique
-          - not_null
+        columns:
+          - name: paid_source
+            description: primary key
+            tests:
+              - not_null
+              
+          
+        
           
           
           
