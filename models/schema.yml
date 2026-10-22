@@ -81,7 +81,32 @@ sources:
             description: primary key
             tests:
               - not_null
-              
+
+          
+models:
+  - name: int_campaigns_day
+    description: metrics of daily campaign details
+    columns:
+      - name: date_date
+        description: date of ads
+        tests:
+          - not_null
+          
+      - name: daily_ads_cost
+        description: daily cost of ads
+        tests:
+          - not_null
+
+      - name: ads_impressions
+        description: daily impressions of ads
+        tests:
+          - not_null
+          
+      - name: ads_clicks
+        description: daily clicks of ads
+        tests:
+          - not_null
+          
           
         
           
