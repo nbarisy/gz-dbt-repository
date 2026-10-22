@@ -107,6 +107,15 @@ models:
         tests:
           - not_null
           
+  - name: finance_campaigns_day
+    description: total values of campaigns
+    columns:
+      - name: date_date
+        description: date of campaigns
+        tests:
+          - not_null
+          
+
           
         
           
