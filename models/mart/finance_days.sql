@@ -1,3 +1,5 @@
+
+
 with orders_per_day as(
     select
     date_date,
