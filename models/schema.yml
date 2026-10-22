@@ -37,6 +37,36 @@ sources:
             tests:
              - unique
              - not_null
+
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: data of adwords
+        tests:
+          - unique
+          - not_null
+          
+      - name: bing
+        identifier: raw_gz_bing
+        description: data of bing
+        tests:
+          - unique
+          - not_null
+          
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: data of criteo
+        tests:
+          - unique
+          - not_null
+          
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: data of facebook
+        tests:
+          - unique
+          - not_null
+          
+          
           
 
         
